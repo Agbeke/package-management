@@ -15,16 +15,16 @@
 
 ### Install Java JDK 1.8+ 
 
-``` sh
+
 # install Java JDK 1.8+ as a pre-requisit for tomcat to run.
 cd /opt 
 sudo yum install git wget -y
 sudo yum install java-1.8.0-openjdk-devel -y
 # Download tomcat software and extract it.
 sudo yum install wget unzip -y
-```
+
 ### Install Tomcat version 10.1.1
-``` sh
+
 sudo wget https://dlcdn.apache.org/tomcat/tomcat-10/v10.1.1/bin/apache-tomcat-10.1.1.tar.gz
 sudo tar -xvf apache-tomcat-10.1.1.tar.gz
 sudo rm -rf apache-tomcat-10.1.1.tar.gz
@@ -37,5 +37,4 @@ sudo ln -s /opt/tomcat10/bin/startup.sh /usr/bin/starttomcat
 sudo ln -s /opt/tomcat10/bin/shutdown.sh /usr/bin/stoptomcat
 starttomcat
 sudo su - ec2-user
-```
 
